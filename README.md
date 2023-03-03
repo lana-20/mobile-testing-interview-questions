@@ -4,7 +4,7 @@
 # <img width=40 src="https://user-images.githubusercontent.com/70295997/222710655-884f2c8e-edab-4c06-9838-5ecba1533ad3.png"> Mobile Testing Q&A
 
 ## Most used ADB commands
-Rewiew the comprehensive answer in this [repo](https://github.com/lana-20/adb-commands).
+Review the comprehensive answer in this [repo](https://github.com/lana-20/adb-commands).
 
 ## Tools used to record crash logs for iOS
 
@@ -57,7 +57,6 @@ A thorough and systematic approach to testing can help ensure that mobile apps a
 - [ ] **Network Changes**:  If the device’s network connection changes while the app is being used (e.g. from WiFi to cellular data), it can interrupt the app and cause it to behave differently. It’s important to test how the zoo handles these interruptions and ensure that it functions properly under different network conditions.
 It’s crucial to test these types of interruptions that may occur while the app is being used to ensure the app provides smooth, seamless, uninterrupted, stable and consistent user experience.
 
-
 ## Difference between mobile and web application testing
 
 When testin mobile apps, I face challenges specific to the mobile market. For example, I have to deal with the memory storage, updates, and more importantly the vast fragmentation of the mobile market. I refer to the [Mobile App Testing Checklist](https://github.com/lana-20/i_sliced_up_fun-SQA-mnemonic#readme) to test mobile-specific crucibles.
@@ -67,7 +66,6 @@ When testin mobile apps, I face challenges specific to the mobile market. For ex
 3. **Network conditions**: Mobile apps may be used in a variety of network conditions, including WiFi, cellular data, and offline mode. Testing a mobile app's performance under these different conditions is an important part of the testing process. In contrast, web apps are typically accessed through a stable network via an internet connection, so network conditions are not as significant a factor.
 4. **Operating systems**: Mobile devices use a variety of different operating systems, such as Android and iOS, and it's important to test a mobile app on all the operating systems that it will support. Web apps, on the other hand, are accessed via a web browser and are not as affected by the operating system of the device they are being accessed from.
 5. **Performance**: Mobile devices have limited processing power and memory compared to desktop computers, so it's important to test the performance of a mobile app to ensure that it runs smoothly on a wide range of devices. Web applications may not have the same performance constraints, although it's still important to test their performance to ensure a good user experience.
-
 
 ## What is mobile fragmentation?
 
@@ -116,7 +114,7 @@ _Version 3_
 ![image](https://user-images.githubusercontent.com/70295997/209901316-d1a194f4-ce69-4150-a7e9-b35097f6856b.png)
 
 ## List top favorite mobile testing and debugging tools
-Rewiew the comprehensive answer in this [repo](https://github.com/lana-20/mobile-testing-debugging-tools).
+Review the comprehensive answer in this [repo](https://github.com/lana-20/mobile-testing-debugging-tools).
 
 ## If you have several Android devices (virtual emulators and/or physical phones) connected to your machine, how do you install an application?
 
@@ -142,7 +140,6 @@ Overall the process of installing apps on Android emulators or physical devices 
 
 * **Emulators**: Need to create and configure the emulators in a development environment like Android Studio. This involves setting up the emulator’s hardware and software configurations and launching the emulator.
 * **Physical Devices**: Need to connect the devices to your machine using USB cables. Make sure that USB debugging is enabled on the devices.
-
 
 ## If you have an old version installed, and you don’t want to lose your data, how you install a new .apk file?
 
@@ -417,19 +414,7 @@ Overall, the main difference between <code>adb logcat</code> and <code>adb bugre
 
 ### Important Information to Check for in Android Logs → ‘adb logcat’ command, output, filtering
 	
-When examining a log file from an Android device, there are several pieces of information I look for to help identify the cause of an issue or crash, or understand the behavior of the system:
-1. **Timestamps** - Help to understand the sequence of events that occurred and identify patterns or trends. Indicate when the message was generated.
-2. **Log Levels** - Different log levels (such as ‘debug’, ‘info’, ‘warning’, and ‘error’) indicate the severity of of an issue or the importance of the message. Examining log messages with higher log levels (e.g., ‘warning’ and ‘error’) can be particularly helpful for identifying issues.
-3. **Log Tags** - Help to filter the logs and focus on messages that are relevant to a particular component or subsystem.
-4. **Error Messages** - Log message themselves can provide detailed info avow the state of the system or the actions that are being taken. Pay particular attention to log messages that contain the word ‘error’ or ‘exception’, as these may indicate issues or problems.
-5. **Stack Traces** - Log messages that includes stack traces can be helpful for identifying the sequence of function calls that led to an issue or crash. Stack traces can be used to trace the issue back to a specific line of code or function.
-
-Overall, examining log files carefully and looking for timestamps, log levels, error messages, and stack traces are an important part of troubleshooting and debugging issues with an Android device. I gain insight into the underlying cause of an issue and take appropriate actions to get it fixed.
-	
-<img width="1712" alt="Screenshot 2023-02-17 at 7 08 04 PM" src="https://user-images.githubusercontent.com/70295997/219828634-3cceca8d-1924-4418-b02d-33b7446d4cbd.png">
-<img width="1712" alt="Screenshot 2023-02-17 at 9 42 50 PM" src="https://user-images.githubusercontent.com/70295997/219843408-3fbfe4ae-431b-4952-a576-15c2bd9de3ee.png">
-<img width="1712" alt="Screenshot 2023-02-19 at 7 41 17 PM" src="https://user-images.githubusercontent.com/70295997/220004463-58132122-cb04-4f36-9677-48e8ab629117.png">
-
+Review the comprehensive answer in this [repo](https://github.com/lana-20/adb-logcat-options-filters).
 
 ## How to install an app on iOS devices?
 
