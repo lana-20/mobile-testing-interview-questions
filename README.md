@@ -5,31 +5,8 @@
 
 
 
-## [Most used ADB commands](https://github.com/lana-20/adb-commands)
-    
-  - [ ] When I conduct interruption testing, I use the <code>adb shell</code> util to turn the mobile and WiFi service networks on and off. For example:
-      
-            adb shell svc data enable
-            adb shell svc data disable
-            adb shell svc wifi enable
-            adb shell svc wifi disable
- 
-      In the context of interrupt testing, I can also mimick a call on an emulator:
-            
-            adb shell am start -a android.intent.action.CALL
-      
-  - [ ] I often use the <code>dumpsys</code> util to to obtain the minSDK version info about the package when selecting/configuring devices for proper test coverage. For example, minSDK 25 stands for Android version 7.1:
-      
-           % adb shell dumpsys package com.myapp.app|grep version
-           versionCode=72 minSDK=25 targetSDK=31 versionName=2.0.72
- 
-	On Windows, replace <code>grep</code> with either <code>find</code> or <code>findstr</code>.
-- [ ] [<code>adb forward tcp:9222 localabstract:chrome_devtools_remote</code>](https://github.com/lana-20/adb-forward-tcp): call out to the Android Debug Bridge and forward the Chrome dev tools port on the device to the local port 9222
-- [ ] [<code>adb shell setprop debug.layout true</code>](https://github.com/lana-20/adb-debug-layout): turn on the debug mode
-
-
-These are just a few examples of the many ADB commands that are available. You can find a complete list of ADB commands in the [Android documentation](https://developer.android.com/studio/command-line/adb).
-
+## Most used ADB commands
+Rewiew the comprehensive answer in this [repo](https://github.com/lana-20/adb-commands).
 
 ## Tools used to record crash logs for iOS
 
