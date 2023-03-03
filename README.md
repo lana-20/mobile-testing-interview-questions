@@ -3,8 +3,6 @@
 
 # <img width=40 src="https://user-images.githubusercontent.com/70295997/222710655-884f2c8e-edab-4c06-9838-5ecba1533ad3.png"> Mobile Testing Q&A
 
-
-
 ## Most used ADB commands
 Rewiew the comprehensive answer in this [repo](https://github.com/lana-20/adb-commands).
 
@@ -12,10 +10,10 @@ Rewiew the comprehensive answer in this [repo](https://github.com/lana-20/adb-co
 
 There are several tools that can be used to record crash logs for iOS devices. One of the most commonly used tools is Apple's Xcode development environment, which includes a built-in crash log organizer.
 
-- [ ] To use Xcode to view crash logs for an iOS device, you'll need to connect the device to your computer and select it as the target device in Xcode. Then, go to the "Window" menu and select "Devices and Simulators" to open the Devices window. In the Devices window, select your device, and then select the "Crash Logs" tab to view a list of crash logs for your device.
-- [ ] Another tool that can be used to view crash logs for iOS devices is iTunes. To view crash logs using iTunes, connect the device to your computer and select it in iTunes. Then, click the "View Device Logs" button in the "Device" section of the iTunes window.
-- [ ] Finally, you can also use the iOS Console app to view crash logs for an iOS device. To do this, you'll need to install the app from the App Store and then connect the device to your computer using a USB cable. Once the device is connected, the iOS Console app will display a list of crash logs for the device.
-- [ ] To access the logs on the physical iOS device go to Settings > Privacy > Analytics and Improvements > Analytics Data.
+- [ ] To use ***Xcode*** to view crash logs for an iOS device, you'll need to connect the device to your computer and select it as the target device in Xcode. Then, go to the "Window" menu and select "Devices and Simulators" to open the Devices window. In the Devices window, select your device, and then select the "Crash Logs" tab to view a list of crash logs for your device.
+- [ ] Another tool that can be used to view crash logs for iOS devices is ***iTunes***. To view crash logs using iTunes, connect the device to your computer and select it in iTunes. Then, click the "View Device Logs" button in the "Device" section of the iTunes window.
+- [ ] Finally, you can also use the iOS ***Console*** app to view crash logs for an iOS device. To do this, you'll need to install the app from the App Store and then connect the device to your computer using a USB cable. Once the device is connected, the iOS Console app will display a list of crash logs for the device.
+- [ ] To access the logs on the physical iOS ***device*** go to *Settings > Privacy > Analytics and Improvements > Analytics Data*.
 
 The retrieved logs may look undecipherable, becauase they are not symbolicated. Devs can [symbolicate](https://betterprogramming.pub/how-to-symbolicate-crash-logs-in-ios-b05637591364) the iOS crash logs before reading them.
 
@@ -120,13 +118,6 @@ _Version 3_
 ## List top favorite mobile testing and debugging tools
 
 [Detailed Response](https://github.com/lana-20/mobile-testing-debugging-tools)
-
-## What is ANR and how does it differ from crashes?
-
-[ANR vs. Crash](https://github.com/lana-20/anr-vs-crash)
-
-[Crash vs. ANR + ADB logcat vs. bugreport](https://github.com/lana-20/android-crash-anr-logcat-bugreport)
-
 
 ## If you have several Android devices (virtual emulators and/or physical phones) connected to your machine, how do you install an application?
 
@@ -397,6 +388,12 @@ A bug report contains device logs, stack traces, and other diagnostic informatio
 4.  Examine the bug report: You can use a tool like Android Studio, Logcat Viewer or a text editor to examine the contents of the  <code>bugreport.zip</code> file and look for patterns or trends that might help you identify the cause of a crash, ANR, or other unexpected behavior.
 
 Overall, using the <code>adb bugreport</code> command can be a useful command line tool to collect a comprehensive set of logs and diagnostic information from an Android device. This can be helpful when you are troubleshooting or debugging issues, or when you need to provide detailed information about the device to support or development teams.
+
+## What's an ANR and how does it differ from a Crash?
+
+[ANR vs. Crash](https://github.com/lana-20/anr-vs-crash)
+
+[Crash vs. ANR + ADB logcat vs. bugreport](https://github.com/lana-20/android-crash-anr-logcat-bugreport)
 
 ## What is the main difference between <code>adb logcat</code> and <code>adb bugreport</code>?
 
