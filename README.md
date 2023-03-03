@@ -1,13 +1,13 @@
 ***REPO CONSTRUCTION IS IN PROGRESS***
 
 
-# Mobile Testing Q&A
+# <img width=40 src="https://user-images.githubusercontent.com/70295997/222710655-884f2c8e-edab-4c06-9838-5ecba1533ad3.png"> Mobile Testing Q&A
 
 
 
 ## [Most used ADB commands](https://github.com/lana-20/adb-commands)
 
-Here is a list of some common ADB (Android Debug Bridge) commands which I use frequently:
+Here is a list of some common [ADB (Android Debug Bridge)](https://github.com/lana-20/android-debug-bridge) commands which I use frequently:
 
 - [ ] <code>adb devices</code>: list all  the devices that are connected to your computer and are recognized by ADB.
 
@@ -27,7 +27,7 @@ Here is a list of some common ADB (Android Debug Bridge) commands which I use fr
 - [ ] <code>adb uninstall <package_name></code>: uninstall an app from the connected device
 - [ ] <code>adb shell</code>: open a shell on the connected device, allowing you to run commands on the device directly
       
-  - [ ] When I conduct interruption testing, I use the <code>adb shell</code> util to turm the mobile and WiFi service networks on and off. For example:
+  - [ ] When I conduct interruption testing, I use the <code>adb shell</code> util to turn the mobile and WiFi service networks on and off. For example:
       
             adb shell svc data enable
             adb shell svc data disable
@@ -38,7 +38,7 @@ Here is a list of some common ADB (Android Debug Bridge) commands which I use fr
             
             adb shell am start -a android.intent.action.CALL
       
-- [ ] <code>adb push <local_file> <remote_destination</code>: copy a file from your computer to the connected device     
+- [ ] <code>adb push <local_file> <remote_destination></code>: copy a file from your computer to the connected device     
   - [ ] When testing an upload feature on an app like YouTube or Instagram, I might need to push some files to my device’s <code>/sdcard</code> directory. I can copy a file (image, video, etc.) from the host machine to the mobile device with the following command:
 
             adb push Desktop/image.png /sdcard/Pictures
@@ -108,9 +108,9 @@ It's important to consider a variety of factors to ensure a high-quality user ex
 
 A thorough and systematic approach to testing can help ensure that mobile apps are of high quality and provide a good user experience.
 
-## Kinds of interruption testing on mobile apps
+## [Kinds of interruption testing on mobile apps](https://github.com/lana-20/interruption-interference-testing/)
 
-[Interruption Testing](https://github.com/lana-20/interruption-interference-testing/) is a type of testing that involves simulating various types of interruptions or distractions that a user may experience while using a mobile app. Some common types of interruptions that may be tested include:
+**Interruption Testing** is a type of testing that involves simulating various types of interruptions or distractions that a user may experience while using a mobile app. Some common types of interruptions that may be tested include:
 - [ ] **Incoming Phone Calls**: If an app is being used and an incoming phone call is received, it’s important to test how the app handles the interruption. Does it pause or stop functioning? Does it allow the user to continue using the app while the call is being taken?
 - [ ] **Incoming Text Messages**: Similar to phone calls, incoming texts can interrupt an app and cause it to pause or close. This type of interruption tests how the app handles an incoming text message while it’s being used and ensures it resumes correctly after the interruption ends.
 - [ ] **Notifications or Alarms**: Mobile apps often generate (push) notifications to alert the user of new events or updates. It’s important to test how the app handles notifications and whether the user is able to continue using the app while the notification is being displayed.
@@ -147,25 +147,25 @@ Definitions (various versions):
 
 _Version 1_
 
-Mobile fragmentation refers to the diverse range of hardware and software configurations that exist among mobile devices, such as smartphones and tablets. This can include differences in screen size, processor type and speed, amount of memory, and version of the operating system. Mobile fragmentation can make it difficult for developers to create apps that work consistently across all devices, and can also pose challenges for users in terms of accessing certain features or finding compatible apps. In general, the more fragmented a mobile ecosystem is, the more difficult it is for developers to create apps and for users to have a consistent experience across devices.
+	Mobile fragmentation refers to the diverse range of hardware and software configurations that exist among mobile devices, such as smartphones and tablets. This can include differences in screen size, processor type and speed, amount of memory, and version of the operating system. Mobile fragmentation can make it difficult for developers to create apps that work consistently across all devices, and can also pose challenges for users in terms of accessing certain features or finding compatible apps. In general, the more fragmented a mobile ecosystem is, the more difficult it is for developers to create apps and for users to have a consistent experience across devices.
 
 _Version 2_
 
-Mobile fragmentation is the term used to describe the wide range of different hardware and software configurations that exist in the mobile device market. This can include differences in the types of processors, screen sizes and resolutions, and operating systems that are used on mobile devices.
+	Mobile fragmentation is the term used to describe the wide range of different hardware and software configurations that exist in the mobile device market. This can include differences in the types of processors, screen sizes and resolutions, and operating systems that are used on mobile devices.
 
-One of the main challenges of mobile fragmentation is that it can make it difficult for developers to create apps and other software that work effectively on all devices. For example, an app that is designed to work on one type of device might not work as well on another device with a different screen size or operating system. As a result, developers may need to create multiple versions of their apps in order to support all the different devices that are available.
+	One of the main challenges of mobile fragmentation is that it can make it difficult for developers to create apps and other software that work effectively on all devices. For example, an app that is designed to work on one type of device might not work as well on another device with a different screen size or operating system. As a result, developers may need to create multiple versions of their apps in order to support all the different devices that are available.
 
-Mobile fragmentation can also be a challenge for users, as it can make it difficult to choose a device that will work well with the apps and services they want to use. Additionally, if an app or service is not available on a particular device, users may need to switch to a different device in order to access it.
+	Mobile fragmentation can also be a challenge for users, as it can make it difficult to choose a device that will work well with the apps and services they want to use. Additionally, if an app or service is not available on a particular device, users may need to switch to a different device in order to access it.
 
 _Version 3_
 
-Mobile fragmentation refers to the wide range of different hardware and software configurations that exist in the mobile market. This includes variations in device brands, models, operating systems, screen sizes, and other hardware and software features. As a result of this fragmentation, it can be difficult for developers to create apps that work seamlessly across all devices and for users to have a consistent experience across different devices.
+	Mobile fragmentation refers to the wide range of different hardware and software configurations that exist in the mobile market. This includes variations in device brands, models, operating systems, screen sizes, and other hardware and software features. As a result of this fragmentation, it can be difficult for developers to create apps that work seamlessly across all devices and for users to have a consistent experience across different devices.
 
-One aspect of mobile fragmentation is the diversity of operating systems that are used on mobile devices. While the two most popular mobile operating systems are Android and iOS, there are also many other operating systems used on a smaller scale, such as KaiOS and Tizen. Each operating system has its own set of technical specifications and capabilities, which can make it challenging for developers to create apps that are compatible with all of them.
+	One aspect of mobile fragmentation is the diversity of operating systems that are used on mobile devices. While the two most popular mobile operating systems are Android and iOS, there are also many other operating systems used on a smaller scale, such as KaiOS and Tizen. Each operating system has its own set of technical specifications and capabilities, which can make it challenging for developers to create apps that are compatible with all of them.
 
-Another aspect of mobile fragmentation is the wide range of hardware configurations that exist within each operating system. For example, even within the Android operating system, there are many different device manufacturers, each with their own hardware specifications and capabilities. This can make it difficult for developers to optimize their apps for all of the different hardware configurations that exist.
+	Another aspect of mobile fragmentation is the wide range of hardware configurations that exist within each operating system. For example, even within the Android operating system, there are many different device manufacturers, each with their own hardware specifications and capabilities. This can make it difficult for developers to optimize their apps for all of the different hardware configurations that exist.
 
-Overall, mobile fragmentation can make it challenging for developers to create apps that work consistently across all devices and can lead to a less cohesive user experience for people using different devices.
+	Overall, mobile fragmentation can make it challenging for developers to create apps that work consistently across all devices and can lead to a less cohesive user experience for people using different devices.
 
 ## How to test a home screen of an app?
 
