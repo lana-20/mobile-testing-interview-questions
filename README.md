@@ -6,11 +6,7 @@
 
 
 ## [Most used ADB commands](https://github.com/lana-20/adb-commands)
-
-Here is a list of some common [ADB (Android Debug Bridge)](https://github.com/lana-20/android-debug-bridge) commands which I use frequently:
-
-- [ ] <code>adb shell</code>: open a shell on the connected device, allowing you to run commands on the device directly
-      
+    
   - [ ] When I conduct interruption testing, I use the <code>adb shell</code> util to turn the mobile and WiFi service networks on and off. For example:
       
             adb shell svc data enable
@@ -22,30 +18,12 @@ Here is a list of some common [ADB (Android Debug Bridge)](https://github.com/la
             
             adb shell am start -a android.intent.action.CALL
       
-- [ ] <code>adb push <local_file> <remote_destination></code>: copy a file from your computer to the connected device     
-  - [ ] When testing an upload feature on an app like YouTube or Instagram, I might need to push some files to my device’s <code>/sdcard</code> directory. I can copy a file (image, video, etc.) from the host machine to the mobile device with the following command:
-
-            adb push Desktop/image.png /sdcard/Pictures
-
-      I don’t use <code>shell</code> in the <code>push</code> command, because I push from my computer. <code>adb push</code> is not a util that lives on my mobile device. It’s just a command to exchange files between the the host machine and the connected device. <code>push</code> and <code>pull</code> work in tandem. <code>pull</code> helps me get files from the device, while <code>push</code> helps me push files onto the device.
-      
-      📝 If the destination directory name does not exist on the device, the command will create a new directory with that name.
-- [ ] <code>adb pull <remote_file> <local_destination></code>: copy a file from the connected device to your computer
-      
-  - [ ] I often use the command to get a copy of my device screen recording on my computer. I also utilize the command to get a copy of an app on my computer by its package name. For example:
-      
-           adb pull /sdcard/<video_name>.mp4 ~/Documents
-           adb pull /data/app/~~TwHdRTDoNtvL1DRfi8jrCS==/com.myapp.app-3MsubaTFWY_02Tgq-TNEAN==/base.apk
-         
-- [ ] <code>adb logcat</code>: display the logical output for the connected device, which can be helpful for debugging
-- [ ] <code>adb shell dumpsys <system_service></code>: display detailed info about a specific system service on the device
-      
   - [ ] I often use the <code>dumpsys</code> util to to obtain the minSDK version info about the package when selecting/configuring devices for proper test coverage. For example, minSDK 25 stands for Android version 7.1:
       
            % adb shell dumpsys package com.myapp.app|grep version
            versionCode=72 minSDK=25 targetSDK=31 versionName=2.0.72
  
-	On Windows, replace <code>grep</code> with either <code>find</code> or <code>findstr</code> .
+	On Windows, replace <code>grep</code> with either <code>find</code> or <code>findstr</code>.
 - [ ] [<code>adb forward tcp:9222 localabstract:chrome_devtools_remote</code>](https://github.com/lana-20/adb-forward-tcp): call out to the Android Debug Bridge and forward the Chrome dev tools port on the device to the local port 9222
 - [ ] [<code>adb shell setprop debug.layout true</code>](https://github.com/lana-20/adb-debug-layout): turn on the debug mode
 
