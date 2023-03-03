@@ -24,6 +24,9 @@ Review the comprehensive answer in this [repo](https://github.com/lana-20/adb-co
 ## If you have an old version installed, and you don’t want to lose your data, how you install a new .apk file?
 Review the comprehensive answer in this [repo](https://github.com/lana-20/adb-app-reinstall).
 
+## How do you uninstall an application?
+Review the comprehensive answer in this [repo](https://github.com/lana-20/adb-uninstall-package_name).
+
 ## Tools used to record crash logs for iOS
 
 There are several tools that can be used to record crash logs for iOS devices. One of the most commonly used tools is Apple's Xcode development environment, which includes a built-in crash log organizer.
@@ -116,15 +119,6 @@ _Version 3_
 ![image](https://user-images.githubusercontent.com/70295997/209901049-b3eedb2f-804e-42a5-9139-5ca3728cb9b9.png)
 ![image](https://user-images.githubusercontent.com/70295997/209901211-84dc2943-27fa-49c3-a6c5-487e28a20ff9.png)
 ![image](https://user-images.githubusercontent.com/70295997/209901316-d1a194f4-ce69-4150-a7e9-b35097f6856b.png)
-
-## How do you uninstall an application?
-I can uninstall an app by its package name. To obtain a list of all the packages installed on the device, run command <code>adb shell pm list packages</code>. To filter out the results by a keyword contained in the package name, use the <code>-f</code> option, as in <code>adb shell pm list packages -f <key_word></code>. 
-      
-Sometimes, package names change. To retrieve a list of 3-rd party packages, installed by the user (not-preinstalled), include the <code>-3</code> option, as in <code>adb shell pm list packages -3</code>. All the vendor-preloaded apps live in the <code>/system</code> directory. All the apps that I, as a user installed, live in the <code>/data/</code> folder. The <code>-3</code> option directs the command to the <code>/data/</code> folder and returns all the apps that reside there.
-
- 
-The package name convention is usually <code>com.app.company.project</code>. [Once I know the package name](https://github.com/lana-20/android-package-name), I run command <code>adb uninstall <package_name></code> to uninstall the app by that package name. The expected output is <code>Success</code>, and the app is gone from the device.
-
 
 ## [I want to capture a screenshot. How can I do it with an adb command?](https://github.com/lana-20/adb-commands#-take-a-screenshot)
 
