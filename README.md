@@ -5,7 +5,7 @@
 
 
 
-## Most used ADB commands
+## [Most used ADB commands](https://github.com/lana-20/adb-commands)
 
 Here is a list of some common ADB (Android Debug Bridge) commands which I use frequently:
 
