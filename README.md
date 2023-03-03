@@ -9,22 +9,6 @@
 
 Here is a list of some common [ADB (Android Debug Bridge)](https://github.com/lana-20/android-debug-bridge) commands which I use frequently:
 
-- [ ] <code>adb devices</code>: list all  the devices that are connected to your computer and are recognized by ADB.
-
-      % adb devices
-      List of devices attached
-      A6PVD6LNFQ578HUS  device
-      emulator-5554 device
-
-  - [ ] 📝 The <code>emulator -list-avds</code> command also lists devices, but only the virtual ones, and not necessarily the ones which are awake and running.
-
-            % emulator -list-avds
-            Nexus_6_API_30
-            Pixel_6_API_33_-_Galaxy_S23_Skin
-            Pixel_6_Pro_API_33
-
-- [ ] <code>adb install <path_to_apk></code>: install an app (specified by the APK file) on the connected device
-- [ ] <code>adb uninstall <package_name></code>: uninstall an app from the connected device
 - [ ] <code>adb shell</code>: open a shell on the connected device, allowing you to run commands on the device directly
       
   - [ ] When I conduct interruption testing, I use the <code>adb shell</code> util to turn the mobile and WiFi service networks on and off. For example:
@@ -62,11 +46,9 @@ Here is a list of some common [ADB (Android Debug Bridge)](https://github.com/la
            versionCode=72 minSDK=25 targetSDK=31 versionName=2.0.72
  
 	On Windows, replace <code>grep</code> with either <code>find</code> or <code>findstr</code> .
-- [ ] <code>adb reboot</code>: reboot the connected device
 - [ ] [<code>adb forward tcp:9222 localabstract:chrome_devtools_remote</code>](https://github.com/lana-20/adb-forward-tcp): call out to the Android Debug Bridge and forward the Chrome dev tools port on the device to the local port 9222
 - [ ] [<code>adb shell setprop debug.layout true</code>](https://github.com/lana-20/adb-debug-layout): turn on the debug mode
-- [ ] <code>adb backup [-f <file>] [-apk|-noapk] [-shared|-noshared] [-all] [-system|-nosystem] [<packages…>]</code>: create a full backup of the connected device, including apps and their data, system settings, and more
-- [ ] <code>adb --help</code>: see a detailed list of all supported adb commands
+
 
 These are just a few examples of the many ADB commands that are available. You can find a complete list of ADB commands in the [Android documentation](https://developer.android.com/studio/command-line/adb).
 
