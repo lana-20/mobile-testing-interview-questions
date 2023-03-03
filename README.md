@@ -38,7 +38,7 @@ Here is a list of some common ADB (Android Debug Bridge) commands which I use fr
             
             adb shell am start -a android.intent.action.CALL
       
-- [ ] <code>adb push <local_file> <remote_location></code>: copy a file from your computer to the connected device     
+- [ ] <code>adb push <local_file> <remote_destination</code>: copy a file from your computer to the connected device     
   - [ ] When testing an upload feature on an app like YouTube or Instagram, I might need to push some files to my device’s <code>/sdcard</code> directory. I can copy a file (image, video, etc.) from the host machine to the mobile device with the following command:
 
             adb push Desktop/image.png /sdcard/Pictures
@@ -46,7 +46,7 @@ Here is a list of some common ADB (Android Debug Bridge) commands which I use fr
       I don’t use <code>shell</code> in the <code>push</code> command, because I push from my computer. <code>adb push</code> is not a util that lives on my mobile device. It’s just a command to exchange files between the the host machine and the connected device. <code>push</code> and <code>pull</code> work in tandem. <code>pull</code> helps me get files from the device, while <code>push</code> helps me push files onto the device.
       
       📝 If the destination directory name does not exist on the device, the command will create a new directory with that name.
-- [ ] <code>adb pull <remote_file> <local_location></code>: copy a file from the connected device to your computer
+- [ ] <code>adb pull <remote_file> <local_destination></code>: copy a file from the connected device to your computer
       
   - [ ] I often use the command to get a copy of my device screen recording on my computer. I also utilize the command to get a copy of an app on my computer by its package name. For example:
       
@@ -248,7 +248,7 @@ Sometimes, package names change. To retrieve a list of 3-rd party packages, inst
 The package name convention is usually <code>com.app.company.project</code>. Once I know the package name, I run command <code>adb uninstall <package_name></code> to uninstall the app by that package name. The expected output is <code>Success</code>, and the app is gone from the device.
 
 
-## I want to capture a screenshot. How can I do it with an adb command?
+## [I want to capture a screenshot. How can I do it with an adb command?](https://github.com/lana-20/adb-commands#-take-a-screenshot)
 
 Frequently, I need to capture a screenshot of the AUT on a mobile device to support my bug ticket. I use the <code>screencap</code> command in the following format:
 
@@ -277,21 +277,20 @@ The following shortcut only works on macOS:
 Unfortunately, there is no equivalent trick for the <code>screenrecord</code> command.
 
 
-## I want to capture a video. How can I do it with an adb command?
+## [I want to capture a video. How can I do it with an adb command?](https://github.com/lana-20/adb-commands#-record-a-video)
+I use the <code>screenrecord</code> command, which is an ADB shell utility, to capture a video of the screen on an Android device (Android 4.4 (API level 19) and higher). The utility records screen activity to an MPEG-4 file. To do this, follow these steps:
 
-You can use the _screenrecord_ command, which is an ADB shell utility to capture a video of the screen on an Android device (Android 4.4 (API level 19) and higher). The utility records screen activity to an MPEG-4 file. To do this, follow these steps:
-
-1. Connect the device to your machine: Use a USB cable to connect the device to your machine. Make sure that USB debugging is enabled on the device.
+1. Connect the device to the machine: Use a USB cable to connect the device to the machine. Make sure that USB debugging is enabled on the device.
 
 2. Start the ADB shell: Open a terminal or command prompt and navigate to the directory where the Android SDK is installed. Then, use the following command to start the ADB shell:
 
             adb shell
 
-3. Start the screenrecord command: Within the ADB shell, use the following command to start the screenrecord command:
+3. Start the recording. Within the ADB shell, use the following command to start the screenrecord:
 
             screenrecord /sdcard/<video_name>.mp4
 
-      You can combine the above commands into one:
+      I can combine the above commands into one:
       
             adb shell screenrecord /sdcard/<video_name>.mp4
 
@@ -314,7 +313,7 @@ You can use the _screenrecord_ command, which is an ADB shell utility to capture
      [Check](https://stackoverflow.com/questions/46482178/adb-screenrecord-command-not-found) if the device has a built-in recorder. Most devices (with recent Android versions) should have the <code>screenrecord</code> included, but it seems some older devices have it missing. To record a video in this case, use Android Studio's built-in options to record. The Play Store also avails many free recording apps, such AZRecorder.
 
 
-4. Perform the actions that you want to capture in the video: Once the video capture is started, perform the actions that you want to capture in the video.
+4. Perform the actions that I want to capture in the video: Once the video capture is started, perform the actions that I want to capture in the video.
       
 5. Stop the screenrecord command: To stop the video capture and save the video, press CTRL+C in the terminal or command prompt. Alternately, use the following ADB command:
       
@@ -338,8 +337,12 @@ You can use the _screenrecord_ command, which is an ADB shell utility to capture
             emulator64_arm64:/sdcard $ ls
             … video_name.mp4 …
 
-      Also make sure to <code>exit</code> the device <code>shell</code> prior to pulling the file to your computer. Because ADB is a server that lives on your machine, not inside the device directory.
-      
+7. Remove the file from the device with the <code>rm</code> command:
+	
+            adb shell rm /sdcard/ErrorMsgRegistrationScreen.mp4
+
+Also make sure to <code>exit</code> the device <code>shell</code> prior to pulling the file to your computer. Because ADB is a server that lives on your machine, not inside the device directory.
+	
 You can pass various options into the screenrecord command:
 
             adb shell screenrecord --size 1280x720 /sdcard/<video_name>.mp4
