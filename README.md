@@ -116,8 +116,7 @@ _Version 3_
 ![image](https://user-images.githubusercontent.com/70295997/209901316-d1a194f4-ce69-4150-a7e9-b35097f6856b.png)
 
 ## List top favorite mobile testing and debugging tools
-
-[Detailed Response](https://github.com/lana-20/mobile-testing-debugging-tools)
+Rewiew the comprehensive answer in this [repo](https://github.com/lana-20/mobile-testing-debugging-tools).
 
 ## If you have several Android devices (virtual emulators and/or physical phones) connected to your machine, how do you install an application?
 
