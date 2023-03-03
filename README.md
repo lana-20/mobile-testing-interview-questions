@@ -6,6 +6,15 @@
 ## Most used ADB commands
 Review the comprehensive answer in this [repo](https://github.com/lana-20/adb-commands).
 
+## List top favorite mobile testing and debugging tools
+Review the comprehensive answer in this [repo](https://github.com/lana-20/mobile-testing-debugging-tools).
+
+## I want to capture a video. How can I do it with an adb command?
+Review the comprehensive answer in this [repo](https://github.com/lana-20/adb-shell-screenrecord/)
+
+## Important Information to Check for in Android Logs → ‘adb logcat’ command, output, filtering	
+Review the comprehensive answer in this [repo](https://github.com/lana-20/adb-logcat-options-filters).
+
 ## Tools used to record crash logs for iOS
 
 There are several tools that can be used to record crash logs for iOS devices. One of the most commonly used tools is Apple's Xcode development environment, which includes a built-in crash log organizer.
@@ -113,9 +122,6 @@ _Version 3_
 ![image](https://user-images.githubusercontent.com/70295997/209901211-84dc2943-27fa-49c3-a6c5-487e28a20ff9.png)
 ![image](https://user-images.githubusercontent.com/70295997/209901316-d1a194f4-ce69-4150-a7e9-b35097f6856b.png)
 
-## List top favorite mobile testing and debugging tools
-Review the comprehensive answer in this [repo](https://github.com/lana-20/mobile-testing-debugging-tools).
-
 ## If you have several Android devices (virtual emulators and/or physical phones) connected to your machine, how do you install an application?
 
 If you have multiple devices available but only one is an emulator, use the <code>-e</code> option to send commands to the emulator. If there are multiple devices but only one hardware device attached, use the <code>-d</code> option to send commands to the hardware device.
@@ -200,9 +206,6 @@ The following shortcut only works on macOS:
 
 Unfortunately, there is no equivalent trick for the <code>screenrecord</code> command.
 
-
-## I want to capture a video. How can I do it with an adb command?
-Review the comprehensive answer in this [repo](https://github.com/lana-20/adb-shell-screenrecord/)
 
 ## You started working on your device and you observe a crash. How do you collect logs?
 
@@ -323,10 +326,6 @@ Overall, the main difference between <code>adb logcat</code> and <code>adb bugre
 ![image](https://user-images.githubusercontent.com/70295997/209907614-5e5ac435-291c-471a-ba71-805d2c7f08ef.png)
 
 ## If you open your log, what is the information you check for?
-
-### Important Information to Check for in Android Logs → ‘adb logcat’ command, output, filtering
-	
-Review the comprehensive answer in this [repo](https://github.com/lana-20/adb-logcat-options-filters).
 
 ## How to install an app on iOS devices?
 
