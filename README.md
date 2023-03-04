@@ -58,6 +58,11 @@ Review the comprehensive answer in this [repo](https://github.com/lana-20/dev-op
 ## Tools used to record crash logs for iOS
 Review the comprehensive answer in this [repo](https://github.com/lana-20/ios-log-tools).
 
+## How to install an app on iOS devices?
+
+Review the comprehensive answer in this [repo](https://github.com/lana-20/install-ios-apps).
+
+
 ## Important things to remember while testing mobile apps
 
 When testing mobile apps, I refer to the [Mobile App Testing Checklist](https://github.com/lana-20/i_sliced_up_fun-SQA-mnemonic#readme).
@@ -150,32 +155,6 @@ _Version 3_
 ![image](https://user-images.githubusercontent.com/70295997/209907467-9cbbc155-3953-46fb-a510-8bef09a7639d.png)
 ![image](https://user-images.githubusercontent.com/70295997/209907558-372c4b29-9387-4f57-92c3-5988be06fa38.png)
 ![image](https://user-images.githubusercontent.com/70295997/209907614-5e5ac435-291c-471a-ba71-805d2c7f08ef.png)
-
-
-
-## How to install an app on iOS devices?
-
-![image](https://user-images.githubusercontent.com/70295997/209907860-5c6b04a6-c83e-4be1-b187-db3e73e7a304.png)
-
-## How to install an app on iOS devices?
-
-![image](https://user-images.githubusercontent.com/70295997/209908238-d63fe0a6-7a83-4c04-9904-9b4617a6e36d.png)
-![image](https://user-images.githubusercontent.com/70295997/209908303-cba56c54-4b52-4098-ba40-5556ac08f324.png)
-![image](https://user-images.githubusercontent.com/70295997/209908370-546d572e-4526-480f-a7c5-b3da6ac4a568.png)
-
-
-To install a test app on an iOS device from your local machine using drag-and-drop, you can use the Xcode integrated development environment (IDE). Here is the general process for installing a test app on an iOS device using Xcode:
-
-Connect the device to your machine: Use a USB cable to connect the device to your machine. Make sure that the device is recognized by Xcode and appears in the Devices window.
-
-Drag and drop the app onto the device: In Finder (on macOS), navigate to the location where the test app is stored. Drag and drop the app onto the device in the Devices window in Xcode.
-
-Wait for the app to install: The app will be installed on the device automatically. You can monitor the progress in the Xcode console.
-
-Test the app: Use the app on the device to test its functionality and behavior. You can use the Xcode debugger to set breakpoints and step through the code, or use other tools and techniques to test the app.
-
-Overall, using Xcode is a simple and straightforward way to install a test app on an iOS device from your local machine using drag-and-drop. This process does not require the use of any command-line tools or commands.
-
 
 ## What is Charles Proxy?
 
