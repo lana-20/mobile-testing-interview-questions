@@ -33,6 +33,9 @@ Review the comprehensive answer in this [repo](https://github.com/lana-20/adb-sh
 ## You started working on your device and you observe a crash. How do you collect logs?
 Review the comprehensive answer in this [repo](https://github.com/lana-20/adb-logcat-options-filters).
 
+## If you open your log, what is the information you check for?
+Review the comprehensive answer in this [repo](https://github.com/lana-20/adb-logcat-options-filters#important-information-to-check-for-in-android-logs--adb-logcat-command-output-filtering)
+
 ## How do you use <code>adb bugreport</code> command to collect the logs?
 Review the comprehensive answer in this [repo](https://github.com/lana-20/adb-bugreport).
 
@@ -148,7 +151,7 @@ _Version 3_
 ![image](https://user-images.githubusercontent.com/70295997/209907558-372c4b29-9387-4f57-92c3-5988be06fa38.png)
 ![image](https://user-images.githubusercontent.com/70295997/209907614-5e5ac435-291c-471a-ba71-805d2c7f08ef.png)
 
-## If you open your log, what is the information you check for?
+
 
 ## How to install an app on iOS devices?
 
